@@ -1,0 +1,48 @@
+.card {
+    width: 290px;
+    border-radius: 1px;
+    font-family: 'Source Sans Pro';
+    box-shadow: 0 0px 2px 0px;
+}
+
+.card:hover {
+    box-shadow: 0 3px 18px 0px rgba(0, 0, 0, .6);
+}
+
+#description {
+    margin-left: 16px;
+    display: inline-block;
+}
+
+span {
+    display: block;
+}
+
+#description #title {
+    font-family: 'Source Sans Pro';
+    font-weight: 600;
+    font-size: 15px;
+    color: #0f5ef0;
+}
+
+#description #nameField {
+    color: #7a8594;
+    font-weight: 700;
+    font-size: 12px;
+}
+
+#description #modifedDetail {
+    font-size: 12px;
+}
+
+.margin-top-18 {
+    margin-top: 18px;
+}
+
+.margin-top-20 {
+    margin-top: 20px;
+}
+
+.margin-bottom-14 {
+    margin-bottom: 14px;
+}

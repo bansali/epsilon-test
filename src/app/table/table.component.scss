@@ -1,0 +1,53 @@
+th {
+    font-size: 14px;
+    color: #666666;
+    text-align: start;
+    cursor: pointer;
+    font-weight: 700;
+}
+
+table {
+    font-family: soure sans pro;
+    border: 1px solid #cacaca;
+    border-radius: 5px;
+}
+
+tr {
+    display: block;
+
+    font-size: 14px;
+    color: #666666;
+
+}
+
+tr:nth-child(even) {
+    background-color: #ffffff;
+}
+
+tr:nth-child(odd) {
+    background-color: #f7f7f7;
+}
+
+tr:hover {
+    background-color: #f0f6ff;
+}
+
+td, th {
+    display: inline-block;
+    margin-top: 14px;
+    margin-bottom: 13px;
+}
+
+.product-name {
+    margin-left: 24px;
+    width: 150px;
+}
+
+.price {
+    width: 150px;
+}
+
+.category {
+    width: 150px;
+    margin-right: 24px;
+}

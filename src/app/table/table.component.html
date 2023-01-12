@@ -1,0 +1,35 @@
+<table>
+    <thead>
+        <tr>
+            <th class="product-name"><a (click)="sortProduct('name')">Product Name
+                    <img *ngIf="sortColumn !== 'name'" src="assets/sort-solid.svg" alt="">
+                    <img *ngIf="sortColumn === 'name' && sortDirection === 'asc'" src="assets/sort-up-solid.svg" alt="">
+                    <img *ngIf="sortColumn === 'name' && sortDirection === 'desc'" src="assets/sort-down-solid.svg"
+                        alt="">
+                </a></th>
+            <th class="price"><a (click)="sortProduct('price')">Price
+                    <img *ngIf="sortColumn !== 'price'" src="assets/sort-solid.svg" alt="">
+                    <img *ngIf="sortColumn === 'price' && sortDirection === 'asc'" src="assets/sort-up-solid.svg"
+                        alt="">
+                    <img *ngIf="sortColumn === 'price' && sortDirection === 'desc'" src="assets/sort-down-solid.svg"
+                        alt=""></a></th>
+            <th class="category"><a (click)="sortProduct('category')">Category
+                    <img *ngIf="sortColumn !== 'category' " src="assets/sort-solid.svg" alt="">
+                    <img *ngIf="sortColumn === 'category' && sortDirection === 'asc'" src="assets/sort-up-solid.svg"
+                        alt="">
+                    <img *ngIf="sortColumn === 'category' && sortDirection === 'desc'" src="assets/sort-down-solid.svg"
+                        alt="">
+                </a></th>
+
+        </tr>
+    </thead>
+    <tbody>
+
+        <tr *ngFor="let product of products  ">
+
+            <td class="product-name">{{ product.name }}</td>
+            <td class="price">{{ product.price }}</td>
+            <td class="category">{{ product.category }}</td>
+        </tr>
+    </tbody>
+</table>
